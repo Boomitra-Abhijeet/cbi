@@ -17,7 +17,7 @@ export default function ThankYou() {
         <Image
               src={Payment}
               alt="Aerial view of agricultural fields"
-              className="m-auto w-300 h-200"
+              className="m-auto w-300 h-180"
               priority
               onClick={handleRedirect}
             />
