@@ -1,29 +1,19 @@
 "use client"
 import Image from "next/image"
 import { useRouter } from "next/navigation";
-import ThankyouImage from "@/assets/thankyou.png"
+import Certificate from "@/assets/certificate.png"
 //console.log(cko)
 export default function ThankYou() {
-
-  const router = useRouter();
-
-
-
-  const handleRedirect = () => {
-    router.push("/certificate"); // Change URL accordingly
-  };
 
 
   return (
       <div className="flex flex-col md:flex-row min-h-screen">
         {/* Left section with background image */}
         <Image
-              src={ThankyouImage}
+              src={Certificate}
               alt="Aerial view of agricultural fields"
-              fill
-              className="object-cover opacity-70"
+              className="m-auto w-270 h-160"
               priority
-              onClick={handleRedirect}
             />
     </div>
   )
